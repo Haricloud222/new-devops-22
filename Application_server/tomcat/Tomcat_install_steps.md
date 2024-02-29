@@ -6,7 +6,7 @@
 
 
 # to Untar
-- tar -zvxf apache-tomcat-8.5.98.tar.gz
+- tar -zvxf apache-tomcat-8.5.99.tar.gz
 
 
 # to install java 
@@ -15,7 +15,7 @@ yum install java-11 -y
 # to start the services 
 
  # go to 
-- cd /home/ec2-user/apache-tomcat-8.5.98/bin/
+- cd /home/ec2-user/apache-tomcat-8.5.99/bin/
 - ./startup.sh
 
 
@@ -39,8 +39,8 @@ yum install java-11 -y
 - find / -name context.xml
 Usually it will under 2 places, and it neeeds to be changed in both the places
 
-- /home/ec2-user/apache-tomcat-8.5.98/webapps/host-manager/META-INF/context.xml
-- /home/ec2-user/apache-tomcat-8.5.98/webapps/manager/META-INF/context.xml
+- /home/ec2-user/apache-tomcat-8.5.99/webapps/host-manager/META-INF/context.xml
+- /home/ec2-user/apache-tomcat-8.5.99/webapps/manager/META-INF/context.xml
 
 
 # to Edit the File with vi
@@ -68,7 +68,7 @@ Sample
   
 # Update users information in the tomcat-users.xml file goto tomcat home directory and Add below users using vi tomcat-users.xml
 
-# /home/ec2-user/apache-tomcat-8.5.96/conf/tomcat-users.xml file
+# /home/ec2-user/apache-tomcat-8.5.99/conf/tomcat-users.xml file
 
 
 
@@ -82,8 +82,8 @@ Sample
 
 
 # Restart the server 
-- /home/ec2-user/tomcat/apache-tomcat-8.5.96/bin/shutdown.sh
-- /home/ec2-user/tomcat/apache-tomcat-8.5.96/bin/startup.sh
+- /home/ec2-user/tomcat/apache-tomcat-8.5.99/bin/shutdown.sh
+- /home/ec2-user/tomcat/apache-tomcat-8.5.99/bin/startup.sh
 
 
 _________________________________________________________________________________________________________________-________________
