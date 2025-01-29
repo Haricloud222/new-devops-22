@@ -1,4 +1,4 @@
-# How to to Install docker
+# How to Install docker
 - yum install docker -y
 
 # to start the docker services
